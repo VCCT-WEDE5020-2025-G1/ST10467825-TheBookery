@@ -33,17 +33,52 @@
         text-decoration: none;
         border-radius: 4px;
       }
+      .download-btn:hover {
+        background: #e2725b;
+        transform: scale(1.05); /* Tiny zoom on hover */
+        transition: 0.2s;
+      }
     </style>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!--Linking the Google fonts for Merriweather-->
   </head>
-  <body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-group">
+        <!-- Logo and site title -->
+        <a href="index.html">
+          <img
+            src="/POE-ASSETS/bookerylogo.png"
+            alt="The Bookery Logo"
+            class="logo-img"
+          />
+          <h1 class="site-title">The Bookery</h1>
+        </a>
+      </div>
+      <div class="nav-links-container">
+        <!-- Navigation links/Menu bar -->
+        <ul class="nav-links">
+          <li><a href="library.html">Library</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="events.html" target="_blank">Events</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Library</h1>
+    <p>Check out our library of books available for download!</p>
+  </header>
+  <body class="body">
     <h1>Library Book Covers</h1>
     <div class="book-grid">
       <div class="book">
-        <img
-          src="/books-EN/Mushoku Tensei - Jobless Reincarnation Volume-1.pdf"
-          alt="Book 1 Cover"
-        />
-        <div>Book Title 1</div>
+        <img src="/POE-ASSETS/books-2.jpg" alt="Book 1 Cover" />
+        <div>Jobless Reincarnation - Volume 1</div>
         <a
           href="/books-EN/Mushoku Tensei - Jobless Reincarnation Volume-1.pdf"
           download
@@ -52,11 +87,8 @@
         >
       </div>
       <div class="book">
-        <img
-          src="/books-EN/Mushoku Tensei - Jobless Reincarnation Volume-2.pdf"
-          alt="Book 2 Cover"
-        />
-        <div>Book Title 2</div>
+        <img src="/POE-ASSETS/books-2.jpg" alt="Book 2 Cover" />
+        <div>Jobless Reincarnation - Volume 2</div>
         <a
           href="/books-EN/Mushoku Tensei - Jobless Reincarnation Volume-2.pdf"
           download
@@ -65,11 +97,8 @@
         >
       </div>
       <div class="book">
-        <img
-          src="/books-EN/Mushoku Tensei - Jobless Reincarnation Volume-3.pdf"
-          alt="Book 3 Cover"
-        />
-        <div>Book Title 3</div>
+        <img src="/POE-ASSETS/books-2.jpg" alt="Book 3 Cover" />
+        <div>Jobless Reincarnation - Volume 3</div>
         <a
           href="/books-EN/Mushoku Tensei - Jobless Reincarnation Volume-3.pdf"
           download
@@ -83,6 +112,8 @@
     </a>
   </body>
   <footer>
-    <p>&copy; 2025 The Bookery. All Rights Reserved.</p>
+    <div>
+      <p class="footer">&copy; 2025 The Bookery. All Rights Reserved.</p>
+    </div>
   </footer>
 </html>

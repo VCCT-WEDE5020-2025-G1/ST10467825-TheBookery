@@ -3,12 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- Linking the external stylesheet to the HTML so there can be clarity between HTML and CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!--Linking the Google fonts for Merriweather-->
   </head>
-  <body>
+  <body class="body">
     <header>
-      <nav>
-        <h1>The Bookery</h1>
+      <nav class="navbar">
+        <div class="logo-group">
+          <!-- Logo and site title -->
+          <a href="index.html">
+            <img
+              src="/POE-ASSETS/bookerylogo.png"
+              alt="The Bookery Logo"
+              class="logo-img"
+            />
+            <h1 class="site-title">The Bookery</h1>
+          </a>
+        </div>
+        <div class="nav-links-container">
+          <!-- Navigation links/Menu bar -->
+          <ul class="nav-links">
+            <li><a href="library.html">Library</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="events.html" target="_blank">Events</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -33,6 +60,8 @@
     <p>Learn more about us.</p>
   </body>
   <footer>
-    <p>&copy; 2025 The Bookery. All Rights Reserved.</p>
+    <div>
+      <p class="footer">&copy; 2025 The Bookery. All Rights Reserved.</p>
+    </div>
   </footer>
 </html>

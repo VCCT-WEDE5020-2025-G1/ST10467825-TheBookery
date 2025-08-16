@@ -1,0 +1,111 @@
+.site-title {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    margin: 0; /* Removes default <h1> margin */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* X, Y, blur, color */
+} /* This is for the main title only. */
+
+.site-title:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3); /* Bigger shadow on hover */
+} /* This is for the hover effect on the main title */
+
+.site-title:active{
+    transform: scale(0.80);
+}
+
+.logo-img {
+    height: 60px; /* Controls how tall the image is */
+    width: auto; /* Maintains aspect ratio so it doesn't stretch */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+.logo-img:hover {
+  transform: scale(1.13); /* Tiny zoom on hover */
+  transition: 1.0s;      /* Smooth animation */
+}
+
+.navbar { /* Navbar container*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns items to the left */
+    padding: 0.25rem 0.5rem;
+    background-color: #8A9B6E ;
+} /* This is for the navbar which has the logo, site title, and menu */
+
+.nav-links {/* Navigation/menu links*/
+    list-style: none; /* Removes bullet points from the list */
+    display: flex; /* Displays the links in a row */
+    gap: 1rem; /* Adds space between the links */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+} /* This is for the menu bar which has the links to other pages */
+
+.nav-links li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Sets the link color */
+    font-size: 16px; /* Makes the link text bold */
+    padding: 0.5rem 1rem; /* Adds padding around the link text */
+    border-radius: 4px;
+}
+
+.nav-links li a:hover {
+    background-color: #f0f0f0; /* Changes background color on hover */
+} /* This is for the hover effect on the menu links */
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* controls space between logo and heading */
+    margin-left: 0;
+    flex-shrink: 0; 
+    flex-grow: 0; /* Prevents the logo from stretching */;
+
+}
+
+.logo-group a {
+  display: flex;       /* Enables flexbox for direct children */
+  align-items: center; /* Vertically centers logo & title */
+  gap: 0.5rem;         /* Adds spacing between them */
+  text-decoration: none; /* Removes underline */
+}
+
+.nav-links-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 1rem; /* Adds space between the links */
+}
+
+.footer{
+    background-color: #f1bd78; /* Brown background for the footer */
+    text-align: center; /* Center the Footer text */
+    color: #333333;
+    text-emphasis: bold; /* Makes the footer text bold */
+    text-underline-position: under; /* Underlines the footer text */
+    padding: 1rem; /* Adds padding around the footer text */
+    position-anchor: bottom; /* Anchors the footer to the bottom of the page */
+    position: relative;
+}
+
+.body {
+    background-color: #F5F0E6; /* Cream background for the body */
+    font-family: 'Merriweather', serif; /* Sets the font for the body */
+}
+
+.bck-btn {
+    background-color: #8A9B6E ;
+    color: #333333;
+    border: mediumturquoise;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.bck-btn:hover {
+    background-color: #ee310c ; /* Changes background color on hover */
+    box-shadow: 0 0 10px #afdd08 ;
+} /* This is for the hover effect on the menu links */
