@@ -2,43 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Library</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-      .book-grid {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-      .book {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
-        width: 150px;
-      }
-      .book img {
-        width: 100px;
-        height: 150px;
-        object-fit: cover;
-      }
-      .download-btn {
-        margin-top: 10px;
-        display: inline-block;
-        padding: 5px 10px;
-        background: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 4px;
-      }
-      .download-btn:hover {
-        background: #e2725b;
-        transform: scale(1.05); /* Tiny zoom on hover */
-        transition: 0.2s;
-      }
-    </style>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,6 +9,7 @@
       rel="stylesheet"
     />
     <!--Linking the Google fonts for Merriweather-->
+    <title>Library</title>
   </head>
   <header>
     <nav class="navbar">
@@ -53,7 +17,7 @@
         <!-- Logo and site title -->
         <a href="index.html">
           <img
-            src="/POE-ASSETS/bookerylogo.png"
+            src="/assets/bookerylogo.png"
             alt="The Bookery Logo"
             class="logo-img"
           />
@@ -73,34 +37,89 @@
     <h1>Library</h1>
     <p>Check out our library of books available for download!</p>
   </header>
-  <body class="body">
-    <h1>Library Book Covers</h1>
+  <body>
+    <h1>Popular reads!</h1>
     <div class="book-grid">
       <div class="book">
-        <img src="/POE-ASSETS/books-2.jpg" alt="Book 1 Cover" />
-        <div>Jobless Reincarnation - Volume 1</div>
+        <img
+          src="/books-EN/adventuresofhuckleberryfin/cover.jpg"
+          alt="Book 1 Cover"
+        />
+        <div>Adventures of Huckleberry Finn - Mark Twain</div>
         <a
-          href="/books-EN/Mushoku Tensei - Jobless Reincarnation Volume-1.pdf"
+          href="/books-EN/adventuresofhuckleberryfin/theadventuresofhuckleberryfinn.epub"
           download
           class="download-btn"
           >Download Book</a
         >
       </div>
       <div class="book">
-        <img src="/POE-ASSETS/books-2.jpg" alt="Book 2 Cover" />
-        <div>Jobless Reincarnation - Volume 2</div>
+        <img src="/books-EN/robinhood/cover.jpg" alt="Book 2 Cover" />
+        <div>The Merry Adventures of Robin Hood - Howard Pyle</div>
         <a
-          href="/books-EN/Mushoku Tensei - Jobless Reincarnation Volume-2.pdf"
+          href="/books-EN/robinhood/themerryadventuresofrobinhood.epub"
           download
           class="download-btn"
           >Download Book</a
         >
       </div>
       <div class="book">
-        <img src="/POE-ASSETS/books-2.jpg" alt="Book 3 Cover" />
-        <div>Jobless Reincarnation - Volume 3</div>
+        <img
+          src="/books-EN/adventuresoftomsawyer/cover.jpg"
+          alt="Book 2 Cover"
+        />
+        <div>The Adventures of Tom Sawyer - Mark Twain</div>
         <a
-          href="/books-EN/Mushoku Tensei - Jobless Reincarnation Volume-3.pdf"
+          href="/books-EN/adventuresoftomsawyer/theadventuresoftomsawyer.epub"
+          download
+          class="download-btn"
+          >Download Book</a
+        >
+      </div>
+      <div class="book">
+        <img src="/books-EN/romeoandjuliet/cover.jpg" alt="Book 4 Cover" />
+        <div>Romeo and Juliet - William Shakespeare</div>
+        <a
+          href="/books-EN/romeoandjuliet/romeoandjulier.epub"
+          download
+          class="download-btn"
+          >Download Book</a
+        >
+      </div>
+      <div class="book">
+        <img
+          src="/books-EN/gulliverstravels-jonathanswift/cover.jpg"
+          alt="Book 5 Cover"
+        />
+        <div>
+          Gulliver's Travels into several Remote Nations of the World - Jonathan
+          Swift
+        </div>
+        <a
+          href="/books-EN/gulliverstravels-jonathanswift/gulliverstravels.epub"
+          download
+          class="download-btn"
+          >Download Book</a
+        >
+      </div>
+      <div class="book">
+        <img
+          src="/books-EN/jockofthebushveld-percyfitzpatrick/cover.png"
+          alt="Book 6 Cover"
+        />
+        <div>Jock of the Bushveld - Sir Percy Fitzpatrick</div>
+        <a
+          href="/books-EN/jockofthebushveld-percyfitzpatrick/jockofthebushveld.epub"
+          download
+          class="download-btn"
+          >Download Book</a
+        >
+      </div>
+      <div class="book">
+        <img src="/books-EN/peterpan-j.m.barrie/cover.png" alt="Book  Cover" />
+        <div>Peter Pan - J.M. Barrie</div>
+        <a
+          href="/books-EN/peterpan-j.m.barrie/peterpan.epub"
           download
           class="download-btn"
           >Download Book</a
@@ -108,7 +127,7 @@
       </div>
     </div>
     <a href="index.html">
-      <button>Back to Home</button>
+      <button class="bck-btn">Back to Home</button>
     </a>
   </body>
   <footer>

@@ -15,6 +15,10 @@
     transform: scale(0.80);
 }
 
+p {
+    line-height: 1.5; /* Increases line height */
+}
+
 .logo-img {
     height: 60px; /* Controls how tall the image is */
     width: auto; /* Maintains aspect ratio so it doesn't stretch */
@@ -86,12 +90,14 @@
     text-underline-position: under; /* Underlines the footer text */
     padding: 1rem; /* Adds padding around the footer text */
     position-anchor: bottom; /* Anchors the footer to the bottom of the page */
-    position: relative;
+    width: 100%; /* Makes the footer full width */
+    bottom: 0; /* Positions the footer at the bottom */
 }
 
-.body {
+body {
     background-color: #F5F0E6; /* Cream background for the body */
     font-family: 'Merriweather', serif; /* Sets the font for the body */
+    margin: 1rem; /* Adds margin around the body */
 }
 
 .bck-btn {
@@ -106,6 +112,54 @@
 }
 
 .bck-btn:hover {
-    background-color: #ee310c ; /* Changes background color on hover */
-    box-shadow: 0 0 10px #afdd08 ;
+    background-color: #d58258 ; /* Changes background color on hover */
+    box-shadow: 0 0 10px #ff0000 ;
 } /* This is for the hover effect on the menu links */
+
+.hero-img {
+    width: 450px;
+    height: 500px;
+    text-align: right;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.hero-section {
+    display: flex;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.book-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center; /* Centers the books in the grid */
+        border: #ff0000 solid 1px; /* Adds a border around the grid */
+      }
+      .book {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        width: 150px;
+      }
+      .book img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+      }
+      .download-btn {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 5px 10px;
+        background: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .download-btn:hover {
+        background: #e2725b;
+        transform: scale(1.05); /* Tiny zoom on hover */
+        transition: 0.2s;
+      }
