@@ -51,6 +51,11 @@ Started working on my home page hero section. Spacing is not looking great as I 
 <img width="994" height="385" alt="image" src="https://github.com/user-attachments/assets/01aa19e6-59a7-4c6d-8018-8a8ebbcb1698" />
 
 ## References  
-- Netlify (2025): Hosting setup.  
-- POPIA Act: Compliance guidelines.  
-- [Netlify Docs](https://docs.netlify.com/) - Hosting setup
+Netlify. (Accessed August 8). Available at:  (https://www.netlify.com/)
+MDN Web Docs (JavaScript) (Accessed August 8) - Available at:   (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+Google Fonts (Accessed August 8) - Available at:   (https://fonts.google.com/)
+Figma (Accessed August 8) -Available at:  (https://www.figma.com/resources/learn-design/)
+Project Gutenberg(Accessed August 22). Free access to e-books. Available at: <https://www.gutenberg.org/>
+SA Education Statistics (Accessed August 8) - Available at:  (https://www.westerncape.gov.za/)
+SA Mobile Network Report (Accessed August 8)  - Available at:  (https://www.gsma.com/mobilefordevelopment/wp-content/uploads/2023/03/South-Africa-Mobile-Economy-2023.pdf)
+
