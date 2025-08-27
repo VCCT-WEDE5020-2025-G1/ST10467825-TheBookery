@@ -5,14 +5,31 @@ A digital library that carries free books accessible to all South Africans.
 
 ## Kgomotso Mbele
 ST10467825 
-
 kgomotsombele@outlook.com
+Repository link: [https://github.com/KgomotsoMbele/WEDE5020-TheBookery]
+
+## Project Overview
+The aim of this project is to make a website that is readily accessible for South Africans.
+What this means to me is that the site has to be low bandwidth, with minimal content to load and have lite downloads.
+With that in mind, I have made the site quite simple and minimalistic, paying homage to Cape Town with the colour scheme as well.
+
+## Goals and Objectives
+- Improve Access: Provide free digital books in Zulu/English via low-bandwidth platform.  
+- Community Engagement: Host monthly virtual Q&As with SA authors.  
+- Partnership Growth: Onboard 10 schools in Khayelitsha within 1 year.
+
+The main objective is to bring literacy to the parts of our communities that do not have readily available access to high speed internet
+or cannot get to public libraries due to their own circumstances. These books can also educate our generation and generations
+to come on older literature that shaped the world of literacy and books. Some of the books on the site are 
+world renowned and massively popular.
 
 ## Features
 - Logo animation site wide
 - Easy to follow page linking
 - Google Calendar integration for easy viewing of events
-- Revolving library with book covers and quick downloads
+- Library sectioned off with shelves, complete with book covers and quick, lite downloads
+- Decently contrasted text and buttons
+- Easy to download books (some with illustrations)
 
 ## Changelog
  - Version 0.1
@@ -29,7 +46,16 @@ Started styling the site to look like the wireframes. Implemented a standard nav
 
 - Version 0.4 (Current)
 Started working on my home page hero section. Spacing is not looking great as I am trying to get the larger text and smaller text to be spaced vertically as in the wireframe but it is not looking good, neither is the hero section image. Aside from that, also working on the library page. I have basically 1 shelf now and found the limits of my countainer for how many books can fit there so going to make a comment in the code for this so I can have a reminder. I think the way I will be going forward, if I cannot implement a carousel correctly, I'll individually make multiple shelves and use that to display the books.
+
+## Sitemap
+<img width="994" height="385" alt="image" src="https://github.com/user-attachments/assets/01aa19e6-59a7-4c6d-8018-8a8ebbcb1698" />
+
 ## References  
-- Netlify (2025): Hosting setup.  
-- POPIA Act: Compliance guidelines.  
-- [Netlify Docs](https://docs.netlify.com/) - Hosting setup
+Netlify. (Accessed August 8). Available at:  (https://www.netlify.com/)
+MDN Web Docs (JavaScript) (Accessed August 8) - Available at:   (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+Google Fonts (Accessed August 8) - Available at:   (https://fonts.google.com/)
+Figma (Accessed August 8) -Available at:  (https://www.figma.com/resources/learn-design/)
+Project Gutenberg(Accessed August 22). Free access to e-books. Available at: <https://www.gutenberg.org/>
+SA Education Statistics (Accessed August 8) - Available at:  (https://www.westerncape.gov.za/)
+SA Mobile Network Report (Accessed August 8)  - Available at:  (https://www.gsma.com/mobilefordevelopment/wp-content/uploads/2023/03/South-Africa-Mobile-Economy-2023.pdf)
+
