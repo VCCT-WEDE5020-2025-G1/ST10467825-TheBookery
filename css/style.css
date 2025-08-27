@@ -2,13 +2,13 @@
     font-size: 24px;
     margin: 0;
     font-weight: bold;
-    color: #333;
+    color: #4B4B4B;
     margin: 0; /* Removes default <h1> margin */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* X, Y, blur, color */
+    box-shadow: 2px 2px 5px #333d29; /* X, Y, blur, color */
 } /* This is for the main title only. */
 
 .site-title:hover {
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.3); /* Bigger shadow on hover */
+    box-shadow: 3px 3px 8px #414833; /* Bigger shadow on hover */
 } /* This is for the hover effect on the main title */
 
 .site-title:active{
@@ -36,7 +36,7 @@ p {
     align-items: center;
     justify-content: space-between; /* Aligns items to the left */
     padding: 0.25rem 0.5rem;
-    background-color: #8A9B6E ;
+    background-color: #A68A64; /* Brown background for the navbar */
 } /* This is for the navbar which has the logo, site title, and menu */
 
 .nav-links {/* Navigation/menu links*/
@@ -49,14 +49,15 @@ p {
 
 .nav-links li a {
     text-decoration: none; /* Removes underline from links */
-    color: #333; /* Sets the link color */
+    color: #4B4B4B; /* Sets the link color */
     font-size: 16px; /* Makes the link text bold */
     padding: 0.5rem 1rem; /* Adds padding around the link text */
     border-radius: 4px;
 }
 
 .nav-links li a:hover {
-    background-color: #f0f0f0; /* Changes background color on hover */
+    background-color: #414833;
+    color: #fff;
 } /* This is for the hover effect on the menu links */
 
 .logo-group {
@@ -83,9 +84,9 @@ p {
 }
 
 .footer{
-    background-color: #f1bd78; /* Brown background for the footer */
+    background-color: #A68A64; /* Brown background for the footer */
     text-align: center; /* Center the Footer text */
-    color: #333333;
+    color: #4B4B4B;
     text-emphasis: bold; /* Makes the footer text bold */
     text-underline-position: under; /* Underlines the footer text */
     padding: 1rem; /* Adds padding around the footer text */
@@ -95,71 +96,147 @@ p {
 }
 
 body {
-    background-color: #F5F0E6; /* Cream background for the body */
+    background-color: #c2c5aa; /* Sky Blue background for the body */
     font-family: 'Merriweather', serif; /* Sets the font for the body */
     margin: 1rem; /* Adds margin around the body */
 }
 
-.bck-btn {
-    background-color: #8A9B6E ;
-    color: #333333;
-    border: mediumturquoise;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-right: 8px;
+.hero-section {
+    display: flex;
+    align-items: center; /* Vertically centers text and image */
+    justify-content: space-between; /* Puts space between text and image */
+    margin-top: 1rem;
+    margin-left: 1rem;
+    gap: 2rem; /* Adds consistent spacing between text and image */
 }
-
-.bck-btn:hover {
-    background-color: #d58258 ; /* Changes background color on hover */
-    box-shadow: 0 0 10px #ff0000 ;
-} /* This is for the hover effect on the menu links */
 
 .hero-img {
     width: 450px;
     height: 500px;
-    text-align: right;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
+    object-fit: cover; /* Prevents image distortion */
+    border-radius: 8px; /* Optional: adds nice rounded corners */
+    flex-shrink: 0; /* Prevents image from shrinking */
 }
 
-.hero-section {
+.hero-txt {
+    margin-right: 10px;
+    word-break: break-all;
+}
+
+/* CTA Button Container */
+.cta-container {
     display: flex;
-    text-align: left;
-    margin-top: 1rem;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    margin-top: 2rem;
     margin-left: 1rem;
 }
 
-.book-grid {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center; /* Centers the books in the grid */
-        border: #ff0000 solid 1px; /* Adds a border around the grid */
-      }
-      .book {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
-        width: 150px;
-      }
-      .book img {
-        width: 100px;
-        height: 150px;
-        object-fit: cover;
-      }
-      .download-btn {
-        margin-top: 10px;
-        display: inline-block;
-        padding: 5px 10px;
-        background: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 4px;
-      }
-      .download-btn:hover {
-        background: #e2725b;
-        transform: scale(1.05); /* Tiny zoom on hover */
-        transition: 0.2s;
-      }
+/* CTA Buttons with subtitles */
+.cta-btn {
+    background-color: #8A9B6E;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #414833;
+    flex: 0 1 auto;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-main-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.btn-sub-text {
+    font-size: 12px; /* Smaller font size */
+    opacity: 0.8; /* Slightly lighter */
+    font-weight: normal;
+    font-style: italic; /* Optional: makes it look more subtitle-like */
+    display: block;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.cta-btn:hover {
+    background-color: #414833;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .cta-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* About Us Page Styles */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.about-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-section {
+    margin-bottom: 2rem;
+}
+
+.about-section h3 {
+    color: #414833;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.about-section p {
+    line-height: 1.6;
+    color: #4B4B4B;
+    margin: 0;
+}
+
+/* Button container */
+.button-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.bck-btn {
+    display: inline-block;
+    background-color: #8A9B6E;
+    color: #4B4B4B;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #414833;
+}
+
+.bck-btn:hover {
+    background-color: #414833;
+    color: #fff;
+    transform: translateY(-2px);
+}
