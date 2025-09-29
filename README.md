@@ -44,8 +44,14 @@ world renowned and massively popular.
  - Version 0.3 
 Started styling the site to look like the wireframes. Implemented a standard navbar across all pages as well as a footer section, some navlinks and some animations/effects on the home buttons I pointed out on the wireframes. Grouped things a bit better to allow for better manuverability and customisations. Probably going to start adding all the colours I mentioned in my proposal and see if they work well together or if I am going to work on a different colour palette.
 
-- Version 0.4 (Current)
+- Version 0.4
 Started working on my home page hero section. Spacing is not looking great as I am trying to get the larger text and smaller text to be spaced vertically as in the wireframe but it is not looking good, neither is the hero section image. Aside from that, also working on the library page. I have basically 1 shelf now and found the limits of my countainer for how many books can fit there so going to make a comment in the code for this so I can have a reminder. I think the way I will be going forward, if I cannot implement a carousel correctly, I'll individually make multiple shelves and use that to display the books.
+
+- Version 0.5
+The library page section has been fully completed. I have made all the shelves I intended to make, loaded all the books with their covers all displaying individually. They are all downloadable in an ePub format as that format allows for the lowest download size. Library page is also quite responsive and compatible with mobile sized screens. Same can be said about the Index page and About Us page. Hero section on the Index page was resolved and is good as well as the About Us page hero section. Reworked the CSS styling sitewide with a new overall colour scheme.
+
+- Version 0.6 (Current)
+Currently have everything else done and working on implementing good JS site wide. I've made all but 1 page responsive for mobile and that's the Contact us page. I believe maybe the embed link styling just has to be worked on but it'll probably bug out so I will need to be careful with that and keep a close eye on it. I'm trying to make my navigation menu turn into a hamburger menu when it's mobile as my main javascript for this site but right now, it isn't displaying correctly which is problematic. That aside, the site's in a decent spot. I have begun mobile testing by making a QR code live server that I can scan with all manner of mobile device to test.
 
 ## Sitemap
 <img width="994" height="385" alt="image" src="https://github.com/user-attachments/assets/01aa19e6-59a7-4c6d-8018-8a8ebbcb1698" />
