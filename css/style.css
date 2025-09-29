@@ -31,43 +31,42 @@ p {
   transition: 1.0s;      /* Smooth animation */
 }
 
-.navbar { /* Navbar container*/
+.navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between; /* Aligns items to the left */
-    padding: 0.25rem 0.5rem;
-    background-color: #A68A64; /* Brown background for the navbar */
-} /* This is for the navbar which has the logo, site title, and menu */
+    padding: 0.5rem 1rem;
+    background-color: #A68A64;
+    position: relative;
+    z-index: 50;
+}
 
-.nav-links {/* Navigation/menu links*/
-    list-style: none; /* Removes bullet points from the list */
-    display: flex; /* Displays the links in a row */
-    gap: 1rem; /* Adds space between the links */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-} /* This is for the menu bar which has the links to other pages */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
 
 .nav-links li a {
-    text-decoration: none; /* Removes underline from links */
-    color: #4B4B4B; /* Sets the link color */
-    font-size: 16px; /* Makes the link text bold */
-    padding: 0.5rem 1rem; /* Adds padding around the link text */
+    text-decoration: none;
+    color: #4B4B4B;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
 }
 
 .nav-links li a:hover {
     background-color: #414833;
     color: #fff;
-} /* This is for the hover effect on the menu links */
+}
 
 .logo-group {
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* controls space between logo and heading */
-    margin-left: 0;
-    flex-shrink: 0; 
-    flex-grow: 0; /* Prevents the logo from stretching */;
-
+    gap: 0.5rem;
+    flex-shrink: 0;
 }
 
 .logo-group a {
@@ -176,16 +175,97 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Mobile responsiveness */
+/* Mobile Styles */
 @media (max-width: 768px) {
-    .cta-container {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #A68A64;
+        padding: 1rem 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 90;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
+    .logo-group {
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 0;
+    }
+
     .cta-btn {
         width: 100%;
-        max-width: 250px;
+        max-width: 280px;
+    }
+}
+
+/* Tablet (<= 1024px wide) */
+@media (max-width: 1024px) {
+    .hero-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    .hero-img{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    .hero-txt{
+        margin: 1rem 0;
+        word-break: normal;
+    }
+    .cta-container{
+        justify-content: center;
+        margin-left: 0;
     }
 }
 
@@ -239,4 +319,15 @@ body {
     background-color: #414833;
     color: #fff;
     transform: translateY(-2px);
+}
+
+/* Hamburger */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    font-size: 32px;
+    background: none;
+    border: none;
+    color: #4B4B4B;
+    cursor: pointer;
+    z-index: 100;
 }
