@@ -50,11 +50,11 @@ Started working on my home page hero section. Spacing is not looking great as I 
 - Version 0.5
 The library page section has been fully completed. I have made all the shelves I intended to make, loaded all the books with their covers all displaying individually. They are all downloadable in an ePub format as that format allows for the lowest download size. Library page is also quite responsive and compatible with mobile sized screens. Same can be said about the Index page and About Us page. Hero section on the Index page was resolved and is good as well as the About Us page hero section. Reworked the CSS styling sitewide with a new overall colour scheme.
 
-- Version 0.6 (Current)
+- Version 0.6 
 Currently have everything else done and working on implementing good JS site wide. I've made all but 1 page responsive for mobile and that's the Contact us page. I believe maybe the embed link styling just has to be worked on but it'll probably bug out so I will need to be careful with that and keep a close eye on it. I'm trying to make my navigation menu turn into a hamburger menu when it's mobile as my main javascript for this site but right now, it isn't displaying correctly which is problematic. That aside, the site's in a decent spot. I have begun mobile testing by making a QR code live server that I can scan with all manner of mobile device to test.
 
- - Version 0.7
- Fixed and improved the mobile navigation across the site and restored the Library page structure. The hamburger menu now displays and opens correctly on mobile viewports. I corrected some head/header markup issues on the Library page (restored its prior structure without changing any book entries), added a missing script include on the About Us page, tightened some CSS rules so the hamburger bars are visible, and made the toggle JavaScript more robust so the menu will open even if a page's CSS inadvertently hides the nav. Small z-index and positioning tweaks were applied to prevent overlap.
+- Version 0.7 (Current)
+Fixed and improved mobile navigation and restored the Library page structure. The hamburger menu now displays and opens correctly on mobile across pages. I fixed head/header markup problems on the Library page. The JavaScript that toggles the menu was made more robust so it still opens even if a page's CSS unintentionally hides the nav. Small styling tweaks (z-index and bar visibility) were applied to prevent the hamburger being overlapped or invisible on narrow screens. Please test the navigation on a mobile viewport and confirm everything looks right when you can. 
  
 ## Sitemap
 <img width="994" height="385" alt="image" src="https://github.com/user-attachments/assets/01aa19e6-59a7-4c6d-8018-8a8ebbcb1698" />
