@@ -82,22 +82,75 @@ p {
     gap: 1rem; /* Adds space between the links */
 }
 
+/* Hide hamburger by default (desktop). Mobile media query will set it to display:block. */
+.hamburger {
+    display: none;
+}
+
+/* Hamburger bars (for animated X) */
+.hamburger {
+    width: 40px;
+    height: 28px;
+    /* keep hidden by default; mobile media query will show as inline-flex */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hamburger .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #4B4B4B;
+    border-radius: 2px;
+    transition: transform 250ms ease, opacity 200ms ease;
+    position: absolute;
+}
+.hamburger .bar:nth-child(1) { transform: translateY(-8px); }
+.hamburger .bar:nth-child(2) { transform: translateY(0); }
+.hamburger .bar:nth-child(3) { transform: translateY(8px); }
+
+/* open state: morph bars into an X */
+.hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+}
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/* Answer buttons */
+.answer-btn {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    margin-left: 0.5rem;
+    background: #8A9B6E;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid #414833;
+}
+.answer-btn:hover, .answer-btn:focus {
+    background: #414833;
+}
+
 .footer{
     background-color: #A68A64; /* Brown background for the footer */
     text-align: center; /* Center the Footer text */
     color: #4B4B4B;
-    text-emphasis: bold; /* Makes the footer text bold */
-    text-underline-position: under; /* Underlines the footer text */
+    font-weight: bold;
     padding: 1rem; /* Adds padding around the footer text */
-    position-anchor: bottom; /* Anchors the footer to the bottom of the page */
     width: 100%; /* Makes the footer full width */
-    bottom: 0; /* Positions the footer at the bottom */
 }
 
 body {
-    background-color: #c2c5aa; /* Sky Blue background for the body */
+    background-color: #c2c5aa; /* Page background */
     font-family: 'Merriweather', serif; /* Sets the font for the body */
-    margin: 1rem; /* Adds margin around the body */
+    margin: 0; /* Remove default body margin */
+    padding: 1rem; /* Add consistent page padding */
 }
 
 .hero-section {
@@ -105,7 +158,6 @@ body {
     align-items: center; /* Vertically centers text and image */
     justify-content: space-between; /* Puts space between text and image */
     margin-top: 1rem;
-    margin-left: 1rem;
     gap: 2rem; /* Adds consistent spacing between text and image */
 }
 
@@ -118,8 +170,19 @@ body {
 }
 
 .hero-txt {
-    margin-right: 10px;
-    word-break: break-all;
+        margin-right: 10px;
+        word-break: normal;
+}
+
+/* Accessibility and utility */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Focus outlines for keyboard users */
+a:focus, button:focus {
+    outline: 3px solid #FFD166;
+    outline-offset: 2px;
 }
 
 /* CTA Button Container */
@@ -178,10 +241,20 @@ body {
 /* Mobile Styles */
 @media (max-width: 768px) {
     .hamburger {
-        display: block;
+        /* force-show hamburger on mobile (use !important to override any cascade) */
+        display: inline-flex !important;
         position: absolute;
         top: 15px;
         right: 20px;
+        z-index: 9999; /* ensure it's above other content */
+    }
+
+    /* Make bars explicit in case other rules override them */
+    .hamburger .bar {
+        width: 28px !important;
+        height: 3px !important;
+        background: #4B4B4B !important;
+        opacity: 1 !important;
     }
 
     .nav-links {
@@ -323,7 +396,7 @@ body {
 
 /* Hamburger */
 .hamburger {
-    display: none; /* Hidden on desktop */
+    /* display is controlled by the media queries above */
     font-size: 32px;
     background: none;
     border: none;

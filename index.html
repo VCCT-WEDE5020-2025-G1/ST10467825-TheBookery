@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +17,7 @@
       <nav class="navbar">
         <div class="logo-group">
           <a href="index.html">
-            <img
-              src="/assets/bookerylogo.png"
-              alt="The Bookery Logo"
-              class="logo-img"
-            />
+            <img src="assets/bookerylogo.png" alt="The Bookery Logo" class="logo-img" />
             <h1 class="site-title">The Bookery</h1>
           </a>
         </div>
@@ -32,38 +29,40 @@
           <li><a href="about-us.html">About Us</a></li>
         </ul>
 
-        <button class="hamburger" id="hamburger">&#9776;</button>
+        <button class="hamburger" id="hamburger" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </nav>
     </header>
 
-    <div class="hero-section">
-      <div style="text-align: left;">
-        <p style="font-size: 25px;" class="hero-txt">
-          <h1>Free Books for<lb></lb> Cape Town</h1>
-        </p><lb></lb>
-        <p>
-          Read online or download free books from our library in English, Zulu, and Afrikaans.
-        </p>
+    <main>
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <h1 id="hero-heading" class="hero-heading">Free Books for<br/>Cape Town</h1>
+          <p class="hero-txt">Read online or download free books from our library in English, Zulu, and Afrikaans.</p>
 
-        <div class="cta-container">
-          <a href="library.html" class="cta-btn">
-            <span class="btn-main-text">Library</span>
-            <span class="btn-sub-text">Browse our collection</span>
-          </a>
+          <div class="cta-container">
+            <a href="library.html" class="cta-btn">
+              <span class="btn-main-text">Library</span>
+              <span class="btn-sub-text">Browse our collection</span>
+            </a>
 
-          <a href="events.html" class="cta-btn">
-            <span class="btn-main-text">Events</span>
-            <span class="btn-sub-text">See upcoming events</span>
-          </a>
+            <a href="events.html" class="cta-btn">
+              <span class="btn-main-text">Events</span>
+              <span class="btn-sub-text">See upcoming events</span>
+            </a>
 
-          <a href="mailto:kgomotsombele@outlook.com" class="cta-btn">
-            <span class="btn-main-text">Donate</span>
-            <span class="btn-sub-text">Get in touch with us if you want to donate</span>
-          </a>
+            <a href="enquiries.html" class="cta-btn">
+              <span class="btn-main-text">FAQ</span>
+              <span class="btn-sub-text">Ask any questions on your mind</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <img src="/assets/books-1.jpg" class="hero-img" />
-    </div>
+        <img src="assets/books-1.jpg" class="hero-img" alt="Stack of books" />
+      </section>
+    </main>
 
     <footer>
       <div>
@@ -71,6 +70,6 @@
       </div>
     </footer>
 
-    <script src="/javascript/script.js"></script>
+    <script src="javascript/script.js"></script>
   </body>
 </html>
