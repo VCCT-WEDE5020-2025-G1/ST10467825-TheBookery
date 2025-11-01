@@ -27,8 +27,8 @@ p {
 }
 
 .logo-img:hover {
-  transform: scale(1.13); /* Tiny zoom on hover */
-  transition: 1.0s;      /* Smooth animation */
+  transform: scale(1.27); /* Tiny zoom on hover */
+  transition: 0.5s;      /* Smooth animation */
 }
 
 .navbar {
