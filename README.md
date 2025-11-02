@@ -60,8 +60,11 @@ world renowned and massively popular.
 - Version 0.7
   Fixed and improved mobile navigation and restored the Library page structure. The hamburger menu now displays and opens correctly on mobile across pages. I fixed head/header markup problems on the Library page. The JavaScript that toggles the menu was made more robust so it still opens even if a page's CSS unintentionally hides the nav. Small styling tweaks (z-index and bar visibility) were applied to prevent the hamburger being overlapped or invisible on narrow screens. Please test the navigation on a mobile viewport and confirm everything looks right when you can.
 
-- Version 0.8 (Final)
-  Added descriptive title tags and meta descriptions across all pages to improve SEO. Created and configured `robots.txt` and `sitemap.xml` files to guide search engine crawling and clarify the site’s structure. Added basic security measures including input validation. Conducted full testing across all pages for responsiveness, accessibility, and consistency. Finalized the project files and documentation for submission.
+- Version 0.8 
+  Added descriptive title tags and meta descriptions across all pages to improve SEO. Created and configured `robots.txt` and `sitemap.xml` files to guide search engine crawling and clarify the site’s structure. Added basic security measures including input validation. Conducted full testing across all pages for responsiveness, accessibility, and consistency.
+
+  - Version 0.9
+    Updated the Contact page with a proper Google maps embed though I had to update my CSP for that so I adjusted that to allow Google Maps embeds to work. I enhance my alt text a lot better for the covers for the books on Library. Double checked that everything loaded alright
 
 ## Sitemap
 
